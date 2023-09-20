@@ -17,7 +17,7 @@
     }
 
     .column{
-        /* display: none; */
+        display: none;
         background-color: rgb(198, 255, 118);
         color: black;
         float: left;

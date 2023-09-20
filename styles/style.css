@@ -93,6 +93,12 @@ body {
     background: #129AFE;
     border: none;
     border-radius: 30px;
+    cursor: pointer;
+}
+
+.bigbutton:active{
+    background: white;
+    color: #129AFE; 
 }
 
 #input1{
@@ -124,7 +130,7 @@ body {
     width: 395px;
     height: 240px;
     border-radius: 8px;
-    background: #f0f0f0;
+    background: #f7f7f7;
     margin: 10px;
 }
 
@@ -167,19 +173,150 @@ body {
 }
 
 #text2{
-    font-size: 28px;
-}
-
-#queattext{
-    font-size: 13px;
+    font-size: 30px;
 }
 
 .container3 {
     font-size: 21px;
     display: flex;
-    flex-direction: column; /* Встановлюємо колонкову орієнтацію */
-    align-items: center; /* Вирівнюємо елементи по горизонталі по центру */
-    justify-content: center; /* Вирівнюємо елементи по вертикалі по центру */
-    text-align: center; /* Вирівнюємо текст в центрі внутрішніх елементів */
-    height: 100vh; /* Заповнюємо всю висоту екрана */
+    flex-direction: column; 
+    align-items: flex-start; 
+    text-align: center; 
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+#queattext{
+    font-size: 15px;
+    margin-right: 20px;
+    text-align: left;
+}
+
+.question1{
+    flex-direction: column; 
+    display: flex;
+    align-items: flex-start; 
+    text-align: center; 
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.line{
+    width: 100%;
+    height: 2px;
+    background-color: #bce3ff;
+}
+
+.question {
+    margin-bottom: 20px;
+}
+
+.container5{
+    text-align: center; 
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+#illustration{
+    width: 20%;
+    height: 20%;
+    margin-top: -700px;
+    margin-bottom: -200px;
+    z-index: 2;
+}
+
+.bluecircle{
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+}
+
+.half-circle{
+    width: 100%; 
+    height: 100%; 
+    background-color: rgba(0, 13, 64, 1);
+    border-radius: 70% 70% 0 0; 
+    position: relative;
+    pointer-events: none;
+}
+
+.container4,
+.container6{
+    width: 100%;
+    height: 20%;
+    flex: 1;
+    text-align: center; 
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    position: relative;
+}
+
+#art1{
+    width: 20%;
+    height: 90%;
+    margin-top: -600px;
+    margin-right: 30%;
+}
+
+#art2{
+    width: 10%;
+    height: 60%;
+    margin-top: -700px;
+    margin-left: 30%;
+}
+
+.container7{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    z-index: 2;
+}
+
+#text7{
+    color: #f7f7f7;
+    font-size: 35px;
+    margin-top: -200px;
+    padding-bottom: 20px;
+}
+
+.buttonf{
+    color: white; 
+    text-align: center;
+    padding: 8px 10px;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px; 
+    background: #129AFE;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.buttonf:active{
+    background: white;
+    color: #129AFE; 
+}
+
+.container8 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /* Розміщує всі container у рядок і розподіляє простір між ними */
+}
+
+.container9,
+.container10,
+.container11,
+.container12 {
+    color: white;
+    display: flex;
+    flex-direction: column; /* Розміщує елементи в кожному container в колонку */
+    align-items: flex-start; /* Вирівнює елементи по лівому краю */
+}
+
+#heypr{
+    color: rgb(128, 128, 128);
 }
