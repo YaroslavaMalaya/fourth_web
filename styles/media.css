@@ -1,0 +1,45 @@
+@media screen and (min-width: 480px){
+    body{
+        background-color: rgb(237, 248, 255);
+    }
+
+    .column{
+        background-color: rgb(255, 118, 148);
+        color: aliceblue;
+        float: left;
+        width: 15%;
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width: 959px){
+    body{
+        background-color: rgb(230, 213, 255);
+    }
+
+    .column{
+        /* display: none; */
+        background-color: rgb(198, 255, 118);
+        color: black;
+        float: left;
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 400px) and (max-width: 1000px){
+    .column{
+        width: 100%;
+    }
+}
+
+.container{
+    margin: 20px 20px;
+}
+
+.column{
+    font-size: 20px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 20px;
+    margin: 10px;
+}
+
