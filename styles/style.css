@@ -103,6 +103,7 @@ body {
 
 #input1{
     border: none; 
+    border-radius: 30px;
     background-color: white;
     padding: 8px;
     font-size: 14px;
@@ -228,7 +229,7 @@ body {
 
 .bluecircle{
     width: 100%;
-    height: 100vh;
+    height: 80vh;
     justify-content: center;
     align-items: center;
     pointer-events: none;
@@ -319,4 +320,40 @@ body {
 
 #heypr{
     color: rgb(128, 128, 128);
+}
+
+.searchinput2{
+    display: inline-block; 
+    background-color: white;
+    border-radius: 30px;
+    border: 1px solid #129AFE;
+}
+
+.container9{
+    margin-left: 10%;
+}
+
+#restext{
+    margin-top: 50px;
+}
+
+.container10,
+.container11{
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 30px;
+}
+
+#textbigger{
+    font-size: 23px;
+}
+
+.container12{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 30px;
+    margin-right: 10%;
 }
