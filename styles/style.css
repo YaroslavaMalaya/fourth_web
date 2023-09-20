@@ -25,7 +25,7 @@ body {
 .logo{
     position: absolute;
     margin-top: 35px;
-    margin-right: 1400px;
+    margin-right: 83%;
 }
 
 #globe{
@@ -64,6 +64,10 @@ body {
     border: 1px solid #129AFE; 
     border-radius: 30px;
     padding: 7px 0;
+}
+
+.menu-button{
+    display: none;
 }
 
 .maintxt{
