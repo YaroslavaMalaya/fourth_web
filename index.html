@@ -41,6 +41,16 @@
             <input type="text" id="input1" name="input1" value="" placeholder="Some txt">
             <button class="bigbutton">Search</button>
         </div>
+
+        <div class="searchinput-dropdown">
+            <ul class="search-dropdown">
+                <li>Who is responsive</li>
+                <li>What is adaptive</li>
+                <li>Flexboxes</li>
+                <li>CSS Grids</li>
+                <li id="blue-txt">Show 5+ more results<span><img src="assets/images/icon_arrow.png" alt="icon_arrow" id="icon_arrow2"></span></li>
+            </ul>
+        </div>
     </div><br><br>
 
     <div class="container1">
@@ -214,6 +224,22 @@
                 }
             });
         });
+
+        document.addEventListener("DOMContentLoaded", function () {
+        const searchInput = document.getElementById("input1");
+        const searchDropdown = document.querySelector(".searchinput-dropdown");
+        let inputActive = false;
+    
+        searchInput.addEventListener("click", function () {
+                if (inputActive) {
+                    searchDropdown.style.display = "none";
+                    inputActive = false;
+                } else {
+                    searchDropdown.style.display = "block";
+                    inputActive = true;
+                }
+            });
+    });
     </script>
     </body>
 </html>

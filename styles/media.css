@@ -73,6 +73,7 @@ body {
     position: absolute;
     background-color: white;
     border: 1px solid #129AFE;
+    border-radius: 10px;
     list-style: none; 
     top: 70px;
     right: 20px;
@@ -138,7 +139,7 @@ body {
     outline: none;
 }
 
-.searchinput {
+.searchinput{
     display: inline-block; 
     background-color: white;
     border: 1px solid #129AFE;
@@ -147,6 +148,40 @@ body {
     margin-left: 5px;
 }
 
+.searchinput-dropdown {
+    display: none;
+    width: 30%;
+    position: absolute;
+    background-color: white;
+    border: 1px solid #129AFE;
+    border-radius: 20px;
+    top: 105%;
+    left: 35%;
+    z-index: 1;
+}
+
+#icon_arrow2{
+    width: 20px;
+    height: 15px;
+    margin-left: 30px;
+}
+
+.search-dropdown {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.search-dropdown li {
+    padding: 10px;
+    border-bottom: 1px solid #cbcbcb;
+    cursor: pointer;
+    text-align: left;
+}
+
+#input1:focus + .searchinput-dropdown {
+    display: block;
+}
 
 
 .container1 {
