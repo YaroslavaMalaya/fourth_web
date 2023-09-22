@@ -68,6 +68,27 @@ body {
     padding: 7px 0;
 }
 
+.menu-dropdown {
+    display: none;
+    position: absolute;
+    background-color: white;
+    border: 1px solid #129AFE;
+    list-style: none; 
+    top: 70px;
+    right: 20px;
+    z-index: 2;
+}
+
+.menu-dropdown .buttons {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    text-align: left;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
 .menu-button{
     display: none;
 }
@@ -488,6 +509,10 @@ body {
         margin-top: 29px;
         width: 25px;
         height: 25px;
+    }
+
+    #menu:hover + .menu-dropdown {
+        display: block;
     }
 
     #nfm{

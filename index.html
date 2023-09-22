@@ -23,6 +23,12 @@
         <div class="menu-button">
             <button class="buttons" id="nfm">Notify me</button>
             <img src="assets/images/Menu.png" alt="menu" id="menu">
+            <ul class="menu-dropdown">
+                <li><button class="buttons">Home</button></li>
+                <li><button class="buttons">FAQ</button></li>
+                <li><button class="buttons">About us</button></li>
+                <li><button class="buttons" id="blue-txt"><img src="assets/images/Globe.png" alt="globe" id="globe">EN</button></li>
+            </ul>
         </div>
     </header>
 
@@ -190,5 +196,24 @@
             </div>
         </div>
     </div>
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const menuButton = document.getElementById("menu");
+            const menuDropdown = document.querySelector(".menu-dropdown");
+            let menuActive = false;
+    
+            menuButton.addEventListener("click", function () {
+                if (menuActive) {
+                    menuDropdown.style.display = "none";
+                    menuActive = false;
+                } else {
+                    menuDropdown.style.display = "block";
+                    menuActive = true;
+                }
+            });
+        });
+    </script>
     </body>
 </html>
